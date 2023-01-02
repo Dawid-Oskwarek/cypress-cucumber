@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-  steps:
     - name: Install Cypress
       shell: bash
       run: npm ci cypress --save-dev cypress-terminal-report
