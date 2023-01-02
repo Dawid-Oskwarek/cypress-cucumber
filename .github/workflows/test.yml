@@ -2,7 +2,7 @@ name: Cucumber Tests
 on:
   pull_request:
 jobs:
-  playwright-test:
+  cypress-test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
