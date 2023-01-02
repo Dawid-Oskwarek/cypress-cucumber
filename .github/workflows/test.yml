@@ -1,0 +1,23 @@
+name: Cucumber Tests
+on:
+  pull_request:
+jobs:
+  cypress-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Cypress
+      shell: bash
+      run: npm ci cypress --save-dev cypress-terminal-report
+    - name: Run Cypress tests
+      uses: cypress-io/github-action@v2
+      with:
+        spec: './cypress/integration/features/example.feature'
+        config: video=false
+        browser: chrome
+    - name: Upload failure screenshots
+      uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: cypress-screenshots-chrome
+        path: cypress/screenshots

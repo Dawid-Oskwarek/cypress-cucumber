@@ -1,0 +1,12 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Basic framework for cypress and cucumber",
+  "author": "Dawid Oskwarek",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.7.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-terminal-report": "^3.5.0"
+  }
+}

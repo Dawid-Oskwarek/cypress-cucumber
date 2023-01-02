@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://ultimateqa.com/simple-html-elements-for-automation/",
+  "testFiles": "**/*.feature",
+  "viewportWidth": 1260,
+  "viewportHeight": 1000,
+  "defaultCommandTimeout": 60000,
+  "responseTimeout": 60000,
+  "retries": 1
+}
